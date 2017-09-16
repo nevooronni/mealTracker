@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'pies',
+  selector: 'food',
   template: `
-  <h3>Here are my favorite pies!</h3>
-  <div *ngFor="let currentPie of favoritePies">
+  <h3>List all of your favorite Meals like:</h3>
+  <div *ngFor="let currentPie of favoriteFood">
     <p>{{currentPie}}</p>
   </div>
   `
 })
 
-export class PiesListComponent {
-  favoritePies: string[] = ["Apple", "Banana Cream", "Blackberry"];
+export class FoodListComponent {
+  favoriteFood: string[] = ["Pizza", "Nyama Choma", "Ugali Matumbo"];
 }

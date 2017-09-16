@@ -6,7 +6,7 @@ import { Meals } from './meal.model';
   template: `
   <div class="container">
     <h1>Meal Tracker</h1>
-    <pies></pies>
+    <food></food>
     <meal-list 
       [childList]="meals" 
       (clickSender)="showDetails($event)"
@@ -15,6 +15,9 @@ import { Meals } from './meal.model';
         [childSelectedMeal]="selectedMeal"
         (doneClickedSender)="finished()"
       ></edit-meal>
+      <new-meal
+        (newMealSender)="addMeal($event)"
+      ></new-meal>
   </div>
   `
 })
@@ -34,6 +37,9 @@ export class AppComponent {
   }
   finished() {
     this.selectedMeal = null;
+  }
+  addMeal(newMealFromChild: Meals) {
+    this.meals.push(newMealFromChild);
   }
 }
 

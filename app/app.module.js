@@ -15,6 +15,7 @@ var pies_list_component_1 = require('./pies-list.component');
 var app_component_1 = require('./app.component');
 var meal_list_component_1 = require('./meal-list.component');
 var edit_meal_component_1 = require('./edit-meal.component');
+var new_meal_component_1 = require('./new-meal.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,9 +27,10 @@ var AppModule = (function () {
             ],
             declarations: [
                 app_component_1.AppComponent,
-                pies_list_component_1.PiesListComponent,
+                pies_list_component_1.FoodListComponent,
                 meal_list_component_1.MealListComponent,
                 edit_meal_component_1.EditMealComponent,
+                new_meal_component_1.NewMealComponent,
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var PiesListComponent = (function () {
-    function PiesListComponent() {
-        this.favoritePies = ["Apple", "Banana Cream", "Blackberry"];
+var FoodListComponent = (function () {
+    function FoodListComponent() {
+        this.favoriteFood = ["Pizza", "Nyama Choma", "Ugali Matumbo"];
     }
-    PiesListComponent = __decorate([
+    FoodListComponent = __decorate([
         core_1.Component({
-            selector: 'pies',
-            template: "\n  <h3>Here are my favorite pies!</h3>\n  <div *ngFor=\"let currentPie of favoritePies\">\n    <p>{{currentPie}}</p>\n  </div>\n  "
+            selector: 'food',
+            template: "\n  <h3>List all of your favorite Meals like:</h3>\n  <div *ngFor=\"let currentPie of favoriteFood\">\n    <p>{{currentPie}}</p>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], PiesListComponent);
-    return PiesListComponent;
+    ], FoodListComponent);
+    return FoodListComponent;
 }());
-exports.PiesListComponent = PiesListComponent;
+exports.FoodListComponent = FoodListComponent;
 //# sourceMappingURL=pies-list.component.js.map
