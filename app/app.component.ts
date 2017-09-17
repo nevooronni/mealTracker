@@ -24,12 +24,12 @@ import { Meals } from './meal.model';
 
 export class AppComponent {
   public meals: Meals[] = [
-    new Meals("kuku", "nice", 1995, 0),
+    /*new Meals("kuku", "nice", 1995, 0),
     new Meals("pilau", "nice", 1970, 1),
     new Meals("pizza", "very good", 2008, 2),
     new Meals("sembe", "okay", 1996, 3),
     new Meals("nyama choma", "very good", 2015, 4),
-    new Meals("samosa", "nice", 1967, 5)
+    new Meals("samosa", "nice", 1967, 5)*/
   ];
   selectedMeal: Meals = null;
   showDetails(clickedMeal: Meals) {

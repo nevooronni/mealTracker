@@ -10,16 +10,16 @@ import {Meals} from './meal.model';
 export class CaloriesPipe implements PipeTransform {
   transform(input: Meals[], desiredCompleteness) {
     var output: Meals[] = [];
-    if(desiredCompleteness === "notFinished") {
+    if(desiredCompleteness === "high") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].finished === false) {
+        if (input[i].calories > 500) {
           output.push(input[i]);
         }
       }
       return output;
-    } else if (desiredCompleteness === "isFinished") {
+    } else if (desiredCompleteness === "low") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].finished === true) {
+        if (input[i].calories < 500) {
           output.push(input[i]);
         }
       }

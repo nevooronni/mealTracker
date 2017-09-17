@@ -9,17 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var meal_model_1 = require('./meal.model');
 var AppComponent = (function () {
     function AppComponent() {
-        this.meals = [
-            new meal_model_1.Meals("kuku", "nice", 1995, 0),
-            new meal_model_1.Meals("pilau", "nice", 1970, 1),
-            new meal_model_1.Meals("pizza", "very good", 2008, 2),
-            new meal_model_1.Meals("sembe", "okay", 1996, 3),
-            new meal_model_1.Meals("nyama choma", "very good", 2015, 4),
-            new meal_model_1.Meals("samosa", "nice", 1967, 5)
-        ];
+        this.meals = [];
         this.selectedMeal = null;
     }
     AppComponent.prototype.showDetails = function (clickedMeal) {

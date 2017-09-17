@@ -5,7 +5,6 @@ var Meals = (function () {
         this.detail = detail;
         this.calories = calories;
         this.id = id;
-        this.finished = true;
     }
     return Meals;
 }());

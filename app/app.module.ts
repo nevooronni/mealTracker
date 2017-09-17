@@ -9,6 +9,7 @@ import { NewMealComponent } from './new-meal.component';
 import { CaloriesPipe } from './calories.pipe';
 
 
+
 @NgModule({
   imports: [
     BrowserModule,
