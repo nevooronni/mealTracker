@@ -5,18 +5,20 @@ import { Meals } from './meal.model';
 @Component({
   selector: 'meal-list',
   template: `
-    <h3>View meals by calories</h3>
-    <select (change)="onChange($event.target.value)">
-        <option value="high">High Calorie over 500</option>
-        <option value="low" selected="selected">Low calorie under 500</option>
-        <option value="all">show All</option>
-    </select><br/><br/><br/>
+    <div id="top">
+      <h3 id="house">View meals by calories</h3>
+      <select (change)="onChange($event.target.value)" class="filter">
+          <option value="high">High Calorie over 500</option>
+          <option value="low" selected="selected">Low calorie under 500</option>
+          <option value="all">show All</option>
+      </select><br/><br/><br/>
+    </div>
     <div class="meals" *ngFor="let meal of childList | calories:selectedCompleteness">
       <h3>Name: {{meal.name}}</h3>
       <h3>Details: {{meal.detail}}</h3>
       <h3>Calories: {{meal.calories}}</h3>
       <h3>ID: {{meal.id}}</h3>
-      <button (click)="edit(meal)">Edit</button>
+      <button id="edit" (click)="edit(meal)">Edit</button>
     </div>
 
   `

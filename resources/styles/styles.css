@@ -3,12 +3,15 @@ h1 {
 }
 
 .meals {
-  border: 1px solid blue;
+  position: relative;
+  top: 600px;
+  left: 100px;
   border-radius: 8px;
-  padding: 10px;
-  height: auto;
+  padding-top: 10px;
+  padding-left: 50px;
+  height: 270px;
   width: 25%;
-  background-color: LightGreen;
+  background-color: #FFFFFF;
   margin-bottom: 8px;
 }
 
@@ -19,3 +22,176 @@ h1 {
   width: 25%;
   background-color: LightBlue;
 }
+
+.filter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#unique2 {
+  position: fixed;
+  top: 150px;
+  left: 800px;
+  background-color: #FFFFFF;
+  height: 370px;
+  width: 380px;
+  border-radius: 5px;
+}
+
+#newMeal {
+  color: #FF5C62;
+  margin-top: 40px;
+  margin-left: 100px;
+  font-weight: bold;
+}
+
+#add {
+  position: absolute;
+  top: 170px;
+  right: 45px;
+  color: #FFFFFF;
+  font-size: 19px;
+  border-width: 0px;
+  border-radius: 5px;
+  background-color: #FF5C62;
+  height: 40px;
+  width: 180px;
+}
+
+#headerEdit {
+  color: #FF5C62;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+#input1 {
+  margin-left: 62px;
+}
+
+#input2 {
+  margin-left: 57px;
+}
+
+#input3 {
+  margin-left: 61px;
+}
+
+#doneNow {
+  color: #FFFFFF;
+  font-size: 19px;
+  border-width: 0px;
+  border-radius: 5px;
+  background-color: #FF5C62;
+  height: 40px;
+  width: 180px; 
+  position: absolute;
+  top: 190px;
+  right: 95px;
+}
+
+.move {
+  margin-left: 70px;
+}
+
+
+#edit-meal {
+  position: fixed;
+  top: 585px;
+  left: 800px;
+  background-color: #FFFFFF;
+  height: 255px;
+  width: 380px;
+  border-radius: 5px;
+  padding-top: 3px;
+  margin-bottom: 30px;
+}
+
+#edit {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  color: #FFFFFF;
+  font-size: 19px;
+  border-width: 0px;
+  border-radius: 5px;
+  background-color: #FF5C62;
+  height: 40px;
+  width: 180px;
+  margin-bottom: 20px; 
+}
+
+#form {
+  position: absolute;
+  font-size: 18px;
+  top: 110px;
+  left: 60px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FF5C62;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.navbar-custom {
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+#newest {
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 29px;
+}
+
+#calories {
+  margin-left: -22px;
+}
+
+#enter {
+  margin-left: -16px;
+}
+
+#position {
+  position: absolute;
+  top: 135px;
+  left: 300px;
+  color: #FFFFFF;
+}
+
+#paragraph {
+  position: absolute;
+  top: 150px;
+  left: 90px;
+  text-align: left;
+  color: #FFFFFF;  
+}
+
+#p {
+  font-size: 19px;
+}
+
+#header {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body {
+  background-color: #FF5C62;
+}
+
+#top {
+  position: absolute;
+  top: 350px;
+  left: 300px;
+}
+
+#house {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 29px;
+}
+

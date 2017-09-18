@@ -4,21 +4,29 @@ import { Meals } from './meal.model';
 @Component({
   selector: 'my-app',
   template: `
-  <div class="container">
-    <h1>Meal Tracker</h1>
-    <food></food>
-    <meal-list 
-      [childList]="meals" 
-      (clickSender)="showDetails($event)"
-      ></meal-list>
-      <edit-meal
-        [childSelectedMeal]="selectedMeal"
-        (doneClickedSender)="finished()"
-      ></edit-meal>
-      <new-meal
-        (newMealSender)="addMeal($event)"
-      ></new-meal>
-  </div>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <nav class="navbar-default navbar-inverse navbar-fixed-top navbar-custom">
+          <div class="container">
+            <div class="navbar-text pull-left"><li class="navbar-brand text-muted" href="index.html">Meal Tracker</li></div>
+          </div>
+        </nav>
+      </div>
+      <food></food>
+      <meal-list 
+        [childList]="meals" 
+        (clickSender)="showDetails($event)"
+        ></meal-list>
+        <edit-meal
+          [childSelectedMeal]="selectedMeal"
+          (doneClickedSender)="finished()"
+        ></edit-meal>
+        <new-meal
+          (newMealSender)="addMeal($event)"
+        ></new-meal>
+    </div>
+  </body>
   `
 })
 

@@ -26,7 +26,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n  <div class=\"container\">\n    <h1>Meal Tracker</h1>\n    <food></food>\n    <meal-list \n      [childList]=\"meals\" \n      (clickSender)=\"showDetails($event)\"\n      ></meal-list>\n      <edit-meal\n        [childSelectedMeal]=\"selectedMeal\"\n        (doneClickedSender)=\"finished()\"\n      ></edit-meal>\n      <new-meal\n        (newMealSender)=\"addMeal($event)\"\n      ></new-meal>\n  </div>\n  "
+            template: "\n  <body>\n    <div class=\"container\">\n      <div class=\"nav\">\n        <nav class=\"navbar-default navbar-inverse navbar-fixed-top navbar-custom\">\n          <div class=\"container\">\n            <div class=\"navbar-text pull-left\"><li class=\"navbar-brand text-muted\" href=\"index.html\">Meal Tracker</li></div>\n          </div>\n        </nav>\n      </div>\n      <food></food>\n      <meal-list \n        [childList]=\"meals\" \n        (clickSender)=\"showDetails($event)\"\n        ></meal-list>\n        <edit-meal\n          [childSelectedMeal]=\"selectedMeal\"\n          (doneClickedSender)=\"finished()\"\n        ></edit-meal>\n        <new-meal\n          (newMealSender)=\"addMeal($event)\"\n        ></new-meal>\n    </div>\n  </body>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

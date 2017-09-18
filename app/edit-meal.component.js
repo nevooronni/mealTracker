@@ -28,7 +28,7 @@ var EditMealComponent = (function () {
     EditMealComponent = __decorate([
         core_1.Component({
             selector: 'edit-meal',
-            template: "\n    <div *ngIf=\"childSelectedMeal\">\n      <h1>Edit</h1>\n      <div>\n        <label>Enter Meal Name:</label>\n        <input [(ngModel)]=\"childSelectedMeal.name\">\n      </div>\n      <div>\n        <label>Enter Details:</label>  \n        <input [(ngModel)]=\"childSelectedMeal.detail\">\n      </div>\n      <div>\n        <label>Enter Calories:</label>  \n        <input [(ngModel)]=\"childSelectedMeal.calories\">\n      </div>\n      <div>\n        <label>Enter Meal ID:</label>  \n        <input [(ngModel)]=\"childSelectedMeal.id\">\n        <button (click)=\"doneClicked()\">Done</button>\n      </div>\n    </div>\n\n  "
+            template: "\n    <div id=\"edit-meal\" *ngIf=\"childSelectedMeal\">\n      <div class=\"move\">\n        <h1 id=\"headerEdit\">Edit</h1>\n        <label>Enter Name:</label>\n        <input [(ngModel)]=\"childSelectedMeal.name\">\n      </div>\n      <div class=\"move\" id=\"input1\">\n        <label>Enter Details:</label>  \n        <input [(ngModel)]=\"childSelectedMeal.detail\">\n      </div>\n      <div class=\"move\" id=\"input2\">\n        <label>EnterCalories:</label>  \n        <input [(ngModel)]=\"childSelectedMeal.calories\">\n      </div>\n      <div class=\"move\" id=\"input3\">\n        <label>Enter Meal ID:</label>  \n        <input [(ngModel)]=\"childSelectedMeal.id\">\n        <button id=\"doneNow\" (click)=\"doneClicked()\">Done</button>\n      </div>\n  </div><br/><br/><br/> \n\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], EditMealComponent);

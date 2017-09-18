@@ -33,7 +33,7 @@ var MealListComponent = (function () {
     MealListComponent = __decorate([
         core_1.Component({
             selector: 'meal-list',
-            template: "\n    <h3>View meals by calories</h3>\n    <select (change)=\"onChange($event.target.value)\">\n        <option value=\"high\">High Calorie over 500</option>\n        <option value=\"low\" selected=\"selected\">Low calorie under 500</option>\n        <option value=\"all\">show All</option>\n    </select><br/><br/><br/>\n    <div class=\"meals\" *ngFor=\"let meal of childList | calories:selectedCompleteness\">\n      <h3>Name: {{meal.name}}</h3>\n      <h3>Details: {{meal.detail}}</h3>\n      <h3>Calories: {{meal.calories}}</h3>\n      <h3>ID: {{meal.id}}</h3>\n      <button (click)=\"edit(meal)\">Edit</button>\n    </div>\n\n  "
+            template: "\n    <div id=\"top\">\n      <h3 id=\"house\">View meals by calories</h3>\n      <select (change)=\"onChange($event.target.value)\" class=\"filter\">\n          <option value=\"high\">High Calorie over 500</option>\n          <option value=\"low\" selected=\"selected\">Low calorie under 500</option>\n          <option value=\"all\">show All</option>\n      </select><br/><br/><br/>\n    </div>\n    <div class=\"meals\" *ngFor=\"let meal of childList | calories:selectedCompleteness\">\n      <h3>Name: {{meal.name}}</h3>\n      <h3>Details: {{meal.detail}}</h3>\n      <h3>Calories: {{meal.calories}}</h3>\n      <h3>ID: {{meal.id}}</h3>\n      <button id=\"edit\" (click)=\"edit(meal)\">Edit</button>\n    </div>\n\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MealListComponent);

@@ -16,7 +16,7 @@ var FoodListComponent = (function () {
     FoodListComponent = __decorate([
         core_1.Component({
             selector: 'food',
-            template: "\n  <h3>List all of your favorite Meals like:</h3>\n  <div *ngFor=\"let currentPie of favoriteFood\">\n    <p>{{currentPie}}</p>\n  </div>\n  "
+            template: "\n  <div id=\"position\">\n  <h3 id=\"header\">List all of your favorite Meals like:</h3>\n\t  <div *ngFor=\"let currentPie of favoriteFood\">\n\t    <p id=\"p\">{{currentPie}}</p>\n\t  </div>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], FoodListComponent);
